@@ -1,7 +1,10 @@
-# Application Title: A Description
+# Pet Tracking Application
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I wanted to do this project, or
-came up with this idea.
+I want to make a pet database, so that you have multiple users and you can track the different pets that they have.
+
+My wife works in and manages a pet store and we've been talking a lot recently about different things around her job. While a lot of the online aspects of her position are handed down from the corporate level I thought it would be interesting to try and craft something that could be relevant to what she does. This also could be used for my buddy's dog walking business so he can keep track of the various animals and households.
+
+When coming up with an idea for what to track in a database per user I thought this would be something which would be useful information for the sales and marketing departments at the pet store, as well as a good way for a user to earn coupons and such (if implemented).
 
 ## Important Links
 
@@ -15,12 +18,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna
 
 ### User Stories
 
-- As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+1. As a pet owner I want to be able to log in and add my different pets to the database and then view all of my pets at once or just one at a time.
+2. As a pet store marketing director I would like to see how many of each type of pet is in the database so we can see what products we should focus on marketing first (to our biggest audience of course!).
+3. As a pet owner I would like to be able to see if my pet could win the pet of the month so I could get free stuff! (stretch goal)
+4. As a dog walking business owner I want to see how many dogs have been entered within the last week to see if the business is growing!
+5. As a groomer I would really like to see pictures of the dog so I can get them as close to that style as possible to make the owners happy. (stretch goal)
+6. As a business owner I would like to be able to mail information and coupons to the people who have given me their information, so I would like to be able to see their full name and address easily!
+7. As a pet food store manager I need to check how many cats have been added recently so I can make sure we have enough cat food!
 
 ### Technologies Used
 
@@ -37,6 +41,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna
 ## Images
 
 ---
+### ERD (entity relationship diagram)
+
+![](petDatabaseWireframe/petDatabaseERD.png)
 
 #### Wireframe:
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+![](petDatabaseWireframe/welcomePhone.png)
+![](petDatabaseWireframe/signUpPhone.png)
+![](petDatabaseWireframe/signedInPhone.png)
+![](petDatabaseWireframe/seeAllPetsPhone.png)
+![](petDatabaseWireframe/addAPetPhone.png)
+![](petDatabaseWireframe/updateAPetPhone.png)
+![](petDatabaseWireframe/removeAPetPhone.png)
+![](petDatabaseWireframe/userInfoPhone.png)
+![](petDatabaseWireframe/updateUserInfoPhone.png)
+![](petDatabaseWireframe/changePasswordPhone.png)
