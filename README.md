@@ -1,4 +1,4 @@
-# Pet Tracking Application
+# Pet Tracking Application: The API
 
 I want to make a pet database, so that you have multiple users and you can track the different pets that they have.
 
@@ -6,15 +6,17 @@ My wife works in and manages a pet store and we've been talking a lot recently a
 
 When coming up with an idea for what to track in a database per user I thought this would be something which would be useful information for the sales and marketing departments at the pet store, as well as a good way for a user to earn coupons and such (if implemented).
 
+My actual implementation has been toned back a bit as it is mainly from a customer's perspective and for them to be able to enter their pet information.
+
 ## Important Links
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+- [Pet Client Repo](https://github.com/brinecr/pet-client)
+- [Deployed API](https://protected-oasis-12032.herokuapp.com/)
+- [Deployed Client](https://brinecr.github.io/pet-client/)
 
 ## Planning Story
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna. Curabitur leo arcu, elementum in posuere vitae, rutrum eu urna. Quisque tincidunt nulla sed mi cursus, nec tristique est fermentum. Etiam lacinia id neque ut egestas. Sed consequat convallis felis nec posuere. Sed non eros sed velit viverra tincidunt. Etiam et tortor sit amet lacus volutpat dignissim. Vestibulum convallis, felis a posuere pretium, turpis enim sollicitudin neque, pretium finibus leo metus sed sapien. Praesent iaculis pharetra nunc ac rhoncus. Duis eu risus in est porttitor egestas sit amet eget metus. Maecenas iaculis auctor ullamcorper. Donec pretium dolor non nisl egestas bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper pulvinar orci interdum mattis. Ut gravida volutpat mauris, a semper risus maximus ut.
+Being as this is our second project I felt I had a stronger handle on planning this time around.
 
 ### User Stories
 
@@ -28,15 +30,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna
 
 ### Technologies Used
 
-- jQuery
-- HTML/CSS
-- Bootstrap
-- Javascript
+1. html
+1. CSS / sass
+1. JavaScript
+1. jQuery
+1. API integration
+1. Bootstrap
+1. Handlebars
+1. Ink
+1. Font Awesome
+1. Wireframes
+1. User Stories
+1. Markup documentation
+1. Mobile First Design
+1. Use of Grunt Serve and Grunt Deploy
+1. GitHub Integration w/ branch control
 
 ### Unsolved Problems
 
-- Still need to ....
-- Would like to eventually ....
+- I would have liked to be able to track more of the user information in addition to just the pet information. It's something I had on my initial wireframes but got toned back a bit in the planning process so I could hit the main requirements for the project.
+- On a higher level, down the line, I'd like to make a seperate interface additions for some power users to manipulate more of the data. This would be regarding having a user who was able to track all of the types of dogs, or see how many other users there are - things like this which would be important for a business to track. This would incorporate into the API but having additional objects needing to be tracked and manipulated.
 
 ## Images
 

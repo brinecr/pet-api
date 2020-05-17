@@ -1,13 +1,17 @@
 const mongoose = require('mongoose')
 
-const exampleSchema = new mongoose.Schema({
-  title: {
+const petSchema = new mongoose.Schema({
+  name: {
     type: String,
     required: true
   },
-  text: {
+  breed: {
     type: String,
     required: true
+  },
+  description: {
+    type: String,
+    required: false
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
@@ -18,4 +22,4 @@ const exampleSchema = new mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('Example', exampleSchema)
+module.exports = mongoose.model('Pet', petSchema)
