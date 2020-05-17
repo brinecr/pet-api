@@ -56,13 +56,15 @@ router.get('/pets/:id', requireToken, (req, res, next) => {
 })
 
 // CREATE
-// POST /examples
+// POST /pets
 router.post('/pets', requireToken, (req, res, next) => {
-  // set owner of new example to be current user
+  // set owner of new pet to be current user
+
+  console.log(req.body.pet.owner)
   req.body.pet.owner = req.user.id
 
   Pet.create(req.body.pet)
-    // respond to succesful `create` with status 201 and JSON of new "example"
+    // respond to succesful `create` with status 201 and JSON of new pet
     .then(pet => {
       res.status(201).json({ pet: pet.toObject() })
     })
@@ -73,7 +75,7 @@ router.post('/pets', requireToken, (req, res, next) => {
 })
 
 // UPDATE
-// PATCH /examples/5a7db6c74d55bc51bdf39793
+// PATCH /pets/5a7db6c74d55bc51bdf39793
 router.patch('/pets/:id', requireToken, removeBlanks, (req, res, next) => {
   // if the client attempts to change the `owner` property by including a new
   // owner, prevent that by deleting that key/value pair
