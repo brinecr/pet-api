@@ -35,6 +35,11 @@ router.get('/pets', requireToken, (req, res, next) => {
       // `examples` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
+
+      // pets = pets.filter(function (pet) {
+      //   return pet.owner === req.body.pet.owner
+      // })
+
       return pets.map(pet => pet.toObject())
     })
     // respond with status 200 and JSON of the examples
