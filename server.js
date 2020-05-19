@@ -13,7 +13,6 @@ const replaceToken = require('./lib/replace_token')
 const requestLogger = require('./lib/request_logger')
 
 // require database configuration logic
-// `db` will be the actual Mongo URI as a string
 const db = require('./config/db')
 
 // require configured passport authentication middleware
@@ -24,9 +23,6 @@ const auth = require('./lib/auth')
 const serverDevPort = 4741
 const clientDevPort = 7165
 
-// establish database connection
-// use new version of URL parser
-// use createIndex instead of deprecated ensureIndex
 mongoose.connect(db, {
   useNewUrlParser: true,
   useCreateIndex: true
@@ -65,8 +61,6 @@ app.use(petRoutes)
 app.use(userRoutes)
 
 // register error handling middleware
-// note that this comes after the route middlewares, because it needs to be
-// passed any error messages from them
 app.use(errorHandler)
 
 // run API on designated port (4741 in this case)
